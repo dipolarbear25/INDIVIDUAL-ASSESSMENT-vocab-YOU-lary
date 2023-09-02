@@ -1,0 +1,21 @@
+Vocabulary cards plan
+
+-firebase
+*setup database and API keys. (DONE)
+*setup google authinticator. (DONE)
+*fill database with vocabulary card data(DONE)
+*delete example data and fill in terms(vocabulary) definitions and maybe example, gonna take some time to think about this one.
+
+-postman
+*make 4 requests for GET PUSH PATCH DELETE
+*make sure DBURL variable is connected
+*
+
+
+-VOCABULARY CARDS CODE
+*
+*
+*
+*
+*
+
