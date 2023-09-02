@@ -34,6 +34,7 @@ If you only get MVP complete, but display the above Core Skills and can demonstr
 - Postman for API testing
 // need GET PATCH DELETE PUSH
 - Firebase for database, rules, and authentication
+//
 - Webpack template setup steps
 - dbdiagram.io or something similar for creating your ERD
 - Figma, google slides, or paper for flow charting your application
