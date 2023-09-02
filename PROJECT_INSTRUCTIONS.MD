@@ -2,14 +2,25 @@
 
 In this student assessment, you will be creating an application that allows users to CRUD vocabulary cards, authenticate with Google, and filter.
 
+// postman, firebase, and possibly netlify is needed.
+
 ## Learning Objectives
-- Single Responsibility Principle (each component/function should have one job)
+- Single Responsibility Principle (each component/function should have one job) 
+
+class classname{}, 
+
 - Import/Export modules
+
 - DOM manipulation with Vanilla JS
+
 - DOM querying with Vanilla JS
+
 - Representing data as HTML
+
 - Usage of semantic HTML5 tags
+
 - Asynchronous Programming
+
 - Promises 
 
 ## REMINDER
@@ -21,6 +32,7 @@ If you only get MVP complete, but display the above Core Skills and can demonstr
 
 ## Tools To Use:
 - Postman for API testing
+// need GET PATCH DELETE PUSH
 - Firebase for database, rules, and authentication
 - Webpack template setup steps
 - dbdiagram.io or something similar for creating your ERD
