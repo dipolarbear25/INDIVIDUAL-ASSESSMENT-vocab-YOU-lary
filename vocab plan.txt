@@ -5,16 +5,16 @@ Vocabulary cards plan
 *setup google authinticator. (DONE)
 *fill database with vocabulary card data(DONE)
 *delete example data and fill in terms(vocabulary) definitions and maybe example, gonna take some time to think about this one.
+*alter rules for user accessability
 
 -postman
-*make 4 requests for GET PUSH PATCH DELETE
-*make sure DBURL variable is connected
+*make get push patch delete requests for new cards user creates
 *need get requests for definitions and terms
-
+*
 
 -VOCABULARY CARDS CODE
 *notecards that hide the definitions until an event listener
-*id like to have them in rows of 4
 *the event should be a click for a button
-*
+*have the ability to create cards with definitions
+*have the ability to filter by code language
 *
