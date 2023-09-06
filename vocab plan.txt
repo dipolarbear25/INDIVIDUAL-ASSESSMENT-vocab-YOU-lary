@@ -17,4 +17,5 @@ Vocabulary cards plan
 *the event should be a click for a button
 *have the ability to create cards with definitions
 *have the ability to filter by code language
-*
+*need to get cards on dom, worry about the vocabulary and definitions later.
+*need a way to make a card on dom
