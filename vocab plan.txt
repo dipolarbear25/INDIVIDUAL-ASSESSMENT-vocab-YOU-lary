@@ -12,6 +12,9 @@ Vocabulary cards plan
 *need get requests for definitions and terms
 *
 
+-bootstrap
+*find vocab cards for page
+
 -VOCABULARY CARDS CODE
 *notecards that hide the definitions until an event listener
 *the event should be a click for a button
