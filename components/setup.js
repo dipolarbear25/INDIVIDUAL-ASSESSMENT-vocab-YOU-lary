@@ -1,5 +1,5 @@
 const setup = () => {
-  document.querySelector('#app').innerHTML = `
+  document.querySelector('#main-container').innerHTML = `
     <h1>HELLO! You are up and running!</h1>
     <small>Open your dev tools</small><br />
     <button class="btn btn-danger" id="click-me">Click ME!</button><br />
