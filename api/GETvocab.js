@@ -52,4 +52,16 @@ const getSingleVocab = (firebasekey) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
-export default { getVocab, postVocab, patchVocab };
+const deleteVocab = (firebasekey) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/vocabs/${firebasekey}.json`, {
+    method: 'DELETE',
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  })
+    .then((response) => response.json())
+    .then((data) => resolve(data))
+    .catch(reject);
+});
+
+export default { getVocab, postVocab, patchVocab, getSingleVocab, deleteVocab };
