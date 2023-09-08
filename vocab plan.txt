@@ -1,23 +1,21 @@
 Vocabulary cards plan
 
--firebase
+-firebase (DONE)
 *setup database and API keys. (DONE)
 *setup google authinticator. (DONE)
 *fill database with vocabulary card data(DONE)
-*delete example data and fill in terms(vocabulary) definitions and maybe example, gonna take some time to think about this one.
-*alter rules for user accessability
+*delete example data and fill in terms(vocabulary) definitions and maybe example, gonna take some time to think about this one.(DONE)
+*alter rules for user accessability(DONE)
 
 -postman
-*make get push patch delete requests for new cards user creates
-*need get requests for definitions and terms
+*make get push patch delete requests for new cards user creates 
+*need get requests for definitions and terms(DONE)
 *
 
 -bootstrap
-*find vocab cards for page
+*find vocab cards for page(DONE)
 
 -VOCABULARY CARDS CODE
-*notecards that hide the definitions until an event listener
-*the event should be a click for a button
 *have the ability to create cards with definitions
 *have the ability to filter by code language
 *need to get cards on dom, worry about the vocabulary and definitions later.
