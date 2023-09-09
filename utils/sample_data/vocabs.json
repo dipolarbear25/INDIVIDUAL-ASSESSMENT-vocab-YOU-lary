@@ -1,0 +1,109 @@
+{
+  "vocabs": {
+    "-NdLyWZ_vc42aTJIqR7w": {
+      "Vocabulary": "boolean",
+      "definition": "a boolean will only be the values true or false",
+      "firebasekey": 1,
+      "languageortech": "ALL",
+      "uid": "sx9qnV76zYMsqJOjgbUUfoo9QrT2"
+    },
+    "-NdLyWZcANjp4Zo2HvwG": {
+      "Vocabulary": "null",
+      "definition": "No value is registered",
+      "firebasekey": 2,
+      "languageortech": "ALL",
+      "uid": "sx9qnV76zYMsqJOjgbUUfoo9QrT2"
+    },
+    "-NdLyWZdqerZ3_7FNPEk": {
+      "Vocabulary": "undefined",
+      "definition": "a variable or function that cannot return a value, or has none to return",
+      "firebasekey": 3,
+      "languageortech": "ALL",
+      "uid": "sx9qnV76zYMsqJOjgbUUfoo9QrT2"
+    },
+    "-NdLyWZfngho3OaOOdh0": {
+      "Vocabulary": "DOM",
+      "definition": "the data representation of the objects that comprise the structure and content of a document on the web",
+      "firebasekey": 4,
+      "languageortech": "ALL",
+      "uid": "sx9qnV76zYMsqJOjgbUUfoo9QrT2"
+    },
+    "-NdLyWZgR9C4EGfXi2GG": {
+      "Vocabulary": "quereySelector()",
+      "definition": "returns the first element in a document with the specified selector",
+      "firebasekey": 5,
+      "languageortech": "JS",
+      "uid": "sx9qnV76zYMsqJOjgbUUfoo9QrT2"
+    },
+    "-NdLyWZhETwt2sp9dayR": {
+      "Vocabulary": "Deconstructing",
+      "definition": "a method to unpack values from an array and properties from an object into variables",
+      "firebasekey": 6,
+      "languageortech": "JS",
+      "uid": "sx9qnV76zYMsqJOjgbUUfoo9QrT2"
+    },
+    "-NdLyWZjtZCuHAi1uz2o": {
+      "Vocabulary": "ID",
+      "definition": "a unique id added onto any tag",
+      "firebasekey": 7,
+      "languageortech": "HTML",
+      "uid": "sx9qnV76zYMsqJOjgbUUfoo9QrT2"
+    },
+    "-NdLyWZk74AK3pb8BTqA": {
+      "Vocabulary": "object",
+      "definition": "a data type that contains properties and methods",
+      "firebasekey": 8,
+      "languageortech": "JS",
+      "uid": "sx9qnV76zYMsqJOjgbUUfoo9QrT2"
+    },
+    "-NdLyWZlcnqQ3R68hJLk": {
+      "Vocabulary": "array",
+      "definition": "array's can hold more than one value",
+      "firebasekey": 9,
+      "languageortech": "JS",
+      "uid": "sx9qnV76zYMsqJOjgbUUfoo9QrT2"
+    },
+    "-NdLyWZn9JgdmPHldnDi": {
+      "Vocabulary": "element",
+      "definition": "an element is defined by a start tag, some content, and an end tag",
+      "firebasekey": 10,
+      "languageortech": "HTML",
+      "uid": "sx9qnV76zYMsqJOjgbUUfoo9QrT2"
+    },
+    "-NdLyWZoRj8nT0Bmujut": {
+      "Vocabulary": "string",
+      "definition": "a data type to represent text",
+      "firebasekey": 11,
+      "languageortech": "ALL",
+      "uid": "sx9qnV76zYMsqJOjgbUUfoo9QrT2"
+    },
+    "-NdLyWZphcBD13J-Xk0k": {
+      "Vocabulary": "integer",
+      "definition": "a data type to represent numeric value",
+      "firebasekey": 12,
+      "languageortech": "ALL",
+      "uid": "sx9qnV76zYMsqJOjgbUUfoo9QrT2"
+    },
+    "-NdLyWZqL0mkcpu49rKn": {
+      "Vocabulary": "promise",
+      "definition": "an object representing the eventual completion or failure of an asynchronous operation",
+      "firebasekey": 13,
+      "languageortech": "JS",
+      "uid": "sx9qnV76zYMsqJOjgbUUfoo9QrT2"
+    },
+    "-NdLyWZsUVQIDn9s7gGY": {
+      "Vocabulary": "class",
+      "definition": "the class attribute is often used to point to a class name in a style sheet",
+      "firebasekey": 14,
+      "languageortech": "HTML",
+      "uid": "sx9qnV76zYMsqJOjgbUUfoo9QrT2"
+    },
+    "-NdLyWZtIlfGNZvhTV1x": {
+      "Vocabulary": "comment",
+      "definition": " comments are not displayed in the browser, but they can help document your HTML source code.",
+      "firebasekey": 15,
+      "languageortech": "ALL",
+      "uid": "sx9qnV76zYMsqJOjgbUUfoo9QrT2"
+    }
+  }
+}

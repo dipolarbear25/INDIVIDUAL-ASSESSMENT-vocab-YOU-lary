@@ -64,4 +64,6 @@ const deleteVocab = (firebasekey) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
-export default { getVocab, postVocab, patchVocab, getSingleVocab, deleteVocab };
+export {
+  getVocab, postVocab, patchVocab, getSingleVocab, deleteVocab
+};

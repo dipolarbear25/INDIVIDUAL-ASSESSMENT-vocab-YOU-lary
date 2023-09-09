@@ -1,16 +1,20 @@
-import domBuilder from '../components/shared/dombuilder';
+import domBuilder from './dombuilder';
 import setup from '../components/setup';
 import 'bootstrap'; // import bootstrap elements and js
 import '../styles/main.scss';
-import { cardsOnDom, addBtn } from '../components/cardsOnDom';
-import getVocab from '../api/GETvocab';
+import { cardsOnDom, noVocab } from '../components/cardsOnDom';
+import { getVocab } from '../api/GETvocab';
 
-const startApp = () => {
+const startApp = (user) => {
   domBuilder();
   setup();
-  addBtn();
-  cardsOnDom();
-  getVocab();
+  getVocab(user.uid).then((array) => {
+    if (array.length) {
+      cardsOnDom(array);
+    } else {
+      noVocab();
+    }
+  });
 };
 
 export default startApp;
