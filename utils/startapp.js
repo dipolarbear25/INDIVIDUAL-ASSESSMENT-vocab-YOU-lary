@@ -7,7 +7,6 @@ import { getVocab } from '../api/GETvocab';
 const startApp = (user) => {
   domBuilder();
   getVocab(user.uid).then((array) => {
-    console.warn(array);
     if (array.length) {
       cardsOnDom(array);
     } else {
