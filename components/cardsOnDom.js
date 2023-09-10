@@ -13,7 +13,7 @@ const cardsOnDom = (array) => {
   renderToDOM('#add-button', addBtn);
 
   let domString = '';
-  if (!array.length) {
+  if (array.length < 1) {
     domString += '<p>No cards here!</p>';
   } else {
     array.forEach((e) => {
