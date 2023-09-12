@@ -22,8 +22,8 @@ const cardsOnDom = (array) => {
         <h5 class="card-title">${e.Vocabulary}</h5>
         <p class="card-text">${e.definition}</p>
         <p class="card-text">${e.languageortech}</p>
-        <button type="button" id="delete-btn-${e.firebasekey} class="delete-btn">Delete</button>
-        <button type="button" id="edit-btn-${e.firebasekey} class="edit-btn">Edit</button>
+        <button type="button" id="delete-btn--${e.firebasekey}" class="delete-btn">Delete</button>
+        <button type="button" id="edit-btn--${e.firebasekey}" class="edit-btn">Edit</button>
       </div>
     </div>`;
     });
