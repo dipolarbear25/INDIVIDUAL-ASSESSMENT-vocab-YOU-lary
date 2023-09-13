@@ -5,9 +5,12 @@ import { cardsOnDom, noVocab } from '../components/cardsOnDom';
 import { getVocab } from '../api/GETvocab';
 import domEvents from '../events/domEvents';
 import navBar from '../components/shared/navBar';
+import addVocabForm from '../components/addVocabForm';
+import navBarEvents from '../events/navBarEvents';
 
 const startApp = (user) => {
   domBuilder();
+  domEvents(user);
   navBar();
   getVocab(user.uid).then((array) => {
     if (array.length) {
@@ -16,7 +19,8 @@ const startApp = (user) => {
       noVocab();
     }
   });
-  domEvents(user);
+  navBarEvents(user);
+  addVocabForm(user);
 };
 
 export default startApp;

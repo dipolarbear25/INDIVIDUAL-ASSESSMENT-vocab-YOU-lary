@@ -11,19 +11,16 @@ const navBar = () => {
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item active">
-            <a class="nav-link" href="#" id="all-books">
+            <a class="nav-link" href="#" id="all-cards">
               All cards <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" id="sale-books">HTML</a>
+            <a class="nav-link" href="#" id="HTML-cards">HTML</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#" id="authors">JS</a>
+            <a class="nav-link" href="#" id="JS-cards">JS</a>
           </li>
-          <li class="nav-item">
-          <a class="nav-link" href="#" id="favorite-authors"></a>
-        </li>
           <li>
           <input
             class="form-control mr-sm-2"

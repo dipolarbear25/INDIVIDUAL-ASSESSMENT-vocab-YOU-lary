@@ -18,5 +18,5 @@ Vocabulary cards plan
 -VOCABULARY CARDS CODE
 *have the ability to create cards with definitions
 *have the ability to filter by code language
-*need to get cards on dom, worry about the vocabulary and definitions later.
-*need a way to make a card on dom
+*need to get cards on dom, worry about the vocabulary and definitions later. (all 3 done)
+*need a way to make a card on dom(done)

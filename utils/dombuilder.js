@@ -8,6 +8,7 @@ const domBuilder = () => {
       <div id="card-container"></div>
       <div id="vocabulary-btn"></div>
       <div id="definition-btn"></div>
+      <div id="form-container"></div>
     </div>`;
   renderToDOM('#app', domString);
 };

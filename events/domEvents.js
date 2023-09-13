@@ -1,5 +1,6 @@
 import { cardsOnDom, noVocab } from '../components/cardsOnDom';
-import { getVocab, deleteVocab } from '../api/GETvocab';
+import { getVocab, deleteVocab, getSingleVocab } from '../api/GETvocab';
+import addVocabForm from '../components/addVocabForm';
 
 const domEvents = (user) => {
   document.querySelector('#card-container').addEventListener('click', (e) => {
@@ -17,10 +18,11 @@ const domEvents = (user) => {
           });
         });
       }
-      if (e.target.id.includes('#edit-vocab')) {
-        // const [, firebaseKey] = e.target.id.split('--');
-        // getSingleEntry(firebaseKey).then((Obj) => addEntryForm(user.uid, Obj));
-      }
+    }
+    if (e.target.id.includes('edit-btn')) {
+      console.warn('hello');
+      const [, firebaseKey] = e.target.id.split('--');
+      getSingleVocab(firebaseKey).then((Obj) => addVocabForm(user.uid, Obj));
     }
   });
 };
