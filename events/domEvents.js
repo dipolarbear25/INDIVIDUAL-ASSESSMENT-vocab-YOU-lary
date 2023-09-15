@@ -1,9 +1,13 @@
 import { cardsOnDom, noVocab } from '../components/cardsOnDom';
-import { getVocab, deleteVocab, getSingleVocab } from '../api/GETvocab';
+import {
+  getVocab, deleteVocab, getSingleVocab,
+} from '../api/GETvocab';
 import addVocabForm from '../components/addVocabForm';
 
 const domEvents = (user) => {
-  document.querySelector('#card-container').addEventListener('click', (e) => {
+  document.querySelector('#main-container').addEventListener('click', (e) => {
+    e.preventDefault();
+
     if (e.target.id.includes('delete-btn')) {
       // eslint-disable-next-line no-alert
       if (window.confirm('Want to delete?')) {
@@ -20,11 +24,22 @@ const domEvents = (user) => {
       }
     }
     if (e.target.id.includes('edit-btn')) {
-      console.warn('hello');
       const [, firebaseKey] = e.target.id.split('--');
       getSingleVocab(firebaseKey).then((Obj) => addVocabForm(user.uid, Obj));
+    }
+
+    if (e.target.id.includes('add-button')) {
+      console.warn('helllo');
+      addVocabForm(user.uid);
     }
   });
 };
 
 export default domEvents;
+
+//  postVocab(payload).then(({ taco }) => {
+//   const patchPayload = { firebaseKey: taco };
+//   patchVocab(patchPayload).then(() => {
+//     getVocab(user.uid).then(cardsOnDom);
+//   });
+// });

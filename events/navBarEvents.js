@@ -12,12 +12,6 @@ const navBarEvents = (user) => {
         }
       });
     }
-    if (e.target.id.includes('HTML-cards')) {
-      cardsOnDom(array.filter(array => array.languageortech === 'HTML'));
-    }
-    // if (e.target.id.includes('JS-cards')) {
-
-    // }
   });
 };
 

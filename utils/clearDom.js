@@ -1,8 +1,8 @@
 const clearDom = () => {
   document.querySelector('#card-container').innerHTML = '';
   document.querySelector('#add-button').innerHTML = '';
-  document.querySelector('#definition-btn').innerHTML = '';
-  document.querySelector('#vocabulary-btn').innerHTML = '';
+  document.querySelector('#form-container').innerHTML = '';
+  document.querySelector('#filter-container').innerHTML = '';
 };
 
 export default clearDom;
