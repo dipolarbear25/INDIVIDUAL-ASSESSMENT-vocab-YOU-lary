@@ -11,7 +11,7 @@ const domEvents = (user) => {
       if (window.confirm('Want to delete?')) {
         const [, firebaseKey] = e.target.id.split('--');
         deleteVocab(firebaseKey).then(() => {
-          getVocab(user.uid).then((array) => {
+          getVocab(user).then((array) => {
             if (array.length) {
               cardsOnDom(array);
             } else {
@@ -23,7 +23,7 @@ const domEvents = (user) => {
     }
     if (e.target.id.includes('edit-btn')) {
       const [, firebaseKey] = e.target.id.split('--');
-      getSingleVocab(firebaseKey).then((response) => addVocabForm(response));
+      getSingleVocab(firebaseKey).then((response) => addVocabForm(user.uid, response));
     }
 
     if (e.target.id.includes('add-button')) {

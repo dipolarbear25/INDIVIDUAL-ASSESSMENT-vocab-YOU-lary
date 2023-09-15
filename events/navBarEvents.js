@@ -4,7 +4,7 @@ import { cardsOnDom, noVocab } from '../components/cardsOnDom';
 const navBarEvents = (user) => {
   document.querySelector('#nav-bar').addEventListener('click', (e) => {
     if (e.target.id.includes('all-cards')) {
-      getVocab(user.uid).then((array) => {
+      getVocab(user).then((array) => {
         if (array.length) {
           cardsOnDom(array);
         } else {

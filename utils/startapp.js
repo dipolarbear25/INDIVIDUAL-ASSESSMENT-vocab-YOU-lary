@@ -15,7 +15,7 @@ const startApp = (user) => {
   addVocabForm(user);
   domEvents(user);
   navBar(user);
-  getVocab(user.uid).then((array) => {
+  getVocab(user).then((array) => {
     if (array.length) {
       cardsOnDom(array);
     } else {
