@@ -6,8 +6,6 @@ import addVocabForm from '../components/addVocabForm';
 
 const domEvents = (user) => {
   document.querySelector('#main-container').addEventListener('click', (e) => {
-    e.preventDefault();
-
     if (e.target.id.includes('delete-btn')) {
       // eslint-disable-next-line no-alert
       if (window.confirm('Want to delete?')) {
@@ -25,7 +23,7 @@ const domEvents = (user) => {
     }
     if (e.target.id.includes('edit-btn')) {
       const [, firebaseKey] = e.target.id.split('--');
-      getSingleVocab(firebaseKey).then((Obj) => addVocabForm(user.uid, Obj));
+      getSingleVocab(firebaseKey).then((response) => addVocabForm(response));
     }
 
     if (e.target.id.includes('add-button')) {

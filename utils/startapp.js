@@ -7,10 +7,12 @@ import domEvents from '../events/domEvents';
 import navBar from '../components/shared/navBar';
 import navBarEvents from '../events/navBarEvents';
 import formEvents from '../events/formEvents';
+import addVocabForm from '../components/addVocabForm';
 // import filterEvents from '../events/filterEvents';
 
 const startApp = (user) => {
   domBuilder(user);
+  addVocabForm(user);
   domEvents(user);
   navBar(user);
   getVocab(user.uid).then((array) => {

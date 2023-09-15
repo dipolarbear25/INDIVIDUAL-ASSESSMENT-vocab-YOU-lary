@@ -2,8 +2,8 @@ import client from '../utils/client';
 
 const endpoint = client.databaseURL;
 
-const getVocab = (uid) => new Promise((resolve, reject) => {
-  fetch(`${endpoint}/vocabs/.json?orderBy="uid"&equalTo="${uid}"`, {
+const getVocab = (user) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/vocabs/.json?orderBy="uid"&equalTo="${user.uid}"`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json'
@@ -40,8 +40,8 @@ const patchVocab = (payload) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
-const getSingleVocab = (firebasekey) => new Promise((resolve, reject) => {
-  fetch(`${endpoint}/vocabs/${firebasekey}.json`, {
+const getSingleVocab = (firebaseKey) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/vocabs/${firebaseKey}.json`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json'
@@ -52,8 +52,8 @@ const getSingleVocab = (firebasekey) => new Promise((resolve, reject) => {
     .catch(reject);
 });
 
-const deleteVocab = (firebasekey) => new Promise((resolve, reject) => {
-  fetch(`${endpoint}/vocabs/${firebasekey}.json`, {
+const deleteVocab = (firebaseKey) => new Promise((resolve, reject) => {
+  fetch(`${endpoint}/vocabs/${firebaseKey}.json`, {
     method: 'DELETE',
     headers: {
       'Content-Type': 'application/json'

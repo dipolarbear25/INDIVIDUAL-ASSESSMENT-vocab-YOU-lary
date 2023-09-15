@@ -1,8 +1,8 @@
-import { getSingleVocab } from '../api/GETvocab';
+// import { getSingleVocab } from '../api/GETvocab';
 import clearDom from '../utils/clearDom';
 import renderToDOM from '../utils/renderToDom';
 
-const addVocabForm = (user, obj = {}) => {
+const addVocabForm = (obj = {}) => {
   clearDom();
   const domString = `
   <form id="${obj.firebaseKey ? `update-Vocab--${obj.firebaseKey}` : 'submit-Vocab'}" class="new-vocab-form">
@@ -22,6 +22,6 @@ const addVocabForm = (user, obj = {}) => {
     </form>`;
 
   renderToDOM('#form-container', domString);
-  getSingleVocab(`${obj.firebaseKey || ''}`, user);
+  // getSingleVocab(`${obj.firebaseKey || ''}`, user);
 };
 export default addVocabForm;

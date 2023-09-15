@@ -2,19 +2,19 @@ import { getVocab, patchVocab, postVocab } from '../api/GETvocab';
 import { cardsOnDom } from '../components/cardsOnDom';
 
 const formEvents = (user) => {
-  document.querySelector('#main-contaier').addEventListener('submit', (e) => {
+  document.querySelector('#form-container').addEventListener('submit', (e) => {
     e.preventDefault();
-    if (e.target.id.includes('submit-form-btn')) {
-      const payload = {
+    if (e.target.id.includes('submit-Vocab')) {
+      const cardPayload = {
         Vocabulary: document.querySelector('#vocab').value,
         definition: document.querySelector('#definition').value,
         languageortech: document.querySelector('#languageortech').value,
         user: user.uid,
         // dateTime: document.querySelector('#dateTime'),
       };
-      postVocab(payload).then(({ name }) => {
-        const patchPayload = { firebaseKey: name };
-        patchVocab(patchPayload).then(() => {
+      postVocab(cardPayload).then(({ name }) => {
+        const payload = { firebaseKey: name };
+        patchVocab(payload).then(() => {
           getVocab(user.uid).then(cardsOnDom);
         });
       });
@@ -30,7 +30,7 @@ const formEvents = (user) => {
         firebaseKey
       };
       patchVocab(payload).then(() => {
-        getVocab(user.uid).then(cardsOnDom);
+        getVocab(user).then(cardsOnDom);
       });
     }
   });
