@@ -64,11 +64,11 @@ Create issue tickets from the items below to help you get started.
   - [ ] Time submitted - Not on form. Handle in your JS
   - [done ] user ID - Not on form. Pull from User object.
 - [done ] READ THIER entries
-- [ ] UPDATE THEIR entries
+- [done ] UPDATE THEIR entries
 - [done ] DELETE THEIR entries
-- [ ] Filter by language/tech
+- [done ] Filter by language/tech
 - [done ] Style your application using your own creativity!
-- [ ] No errors - linters should be clean
+- [done ] No errors - linters should be clean
 
 ## Stretch 1
 [Stretch 1 Wireframe](https://www.figma.com/file/yZE38QzpoUWELA22gGZJve/Stretch-1)

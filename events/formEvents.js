@@ -7,10 +7,10 @@ const formEvents = (user) => {
     if (e.target.id.includes('submit-Vocab')) {
       const cardPayload = {
         Vocabulary: document.querySelector('#vocab').value,
+        dateadded: new Date(),
         definition: document.querySelector('#definition').value,
         languageortech: document.querySelector('#languageortech').value,
-        uid: user.uid,
-        // dateTime: document.querySelector('#dateTime'),
+        uid: user.uid
       };
       postVocab(cardPayload).then(({ name }) => {
         const payload = { firebaseKey: name };
@@ -23,10 +23,10 @@ const formEvents = (user) => {
       const [, firebaseKey] = e.target.id.split('--');
       const payload = {
         Vocabulary: document.querySelector('#vocab').value,
+        dateadded: new Date(),
         definition: document.querySelector('#definition').value,
         languageortech: document.querySelector('#languageortech').value,
         uid: user.uid,
-        // dateTime: document.querySelector('#dateTime'),
         firebaseKey
       };
       patchVocab(payload).then(() => {

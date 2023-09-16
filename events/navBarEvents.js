@@ -12,6 +12,12 @@ const navBarEvents = (user) => {
         }
       });
     }
+    if (e.target.id.includes('HTML-cards')) {
+      getVocab(user).then((array) => cardsOnDom(array.filter((term) => term.languageortech === 'HTML')));
+    }
+    if (e.target.id.includes('JS-cards')) {
+      getVocab(user).then((array) => cardsOnDom(array.filter((term) => term.languageortech === 'JS')));
+    }
   });
 };
 
