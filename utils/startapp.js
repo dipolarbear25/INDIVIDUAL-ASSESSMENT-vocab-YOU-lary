@@ -14,6 +14,7 @@ const startApp = (user) => {
   domBuilder(user);
   addVocabForm(user);
   domEvents(user);
+  formEvents(user);
   navBar(user);
   getVocab(user).then((array) => {
     if (array.length) {
@@ -22,7 +23,6 @@ const startApp = (user) => {
       noVocab();
     }
   });
-  formEvents(user);
   navBarEvents(user);
 };
 

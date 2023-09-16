@@ -23,7 +23,7 @@ const domEvents = (user) => {
     }
     if (e.target.id.includes('edit-btn')) {
       const [, firebaseKey] = e.target.id.split('--');
-      getSingleVocab(firebaseKey).then((response) => addVocabForm(user.uid, response));
+      getSingleVocab(firebaseKey).then((obj) => addVocabForm(user.uid, obj));
     }
 
     if (e.target.id.includes('add-button')) {

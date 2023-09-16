@@ -9,7 +9,7 @@ const formEvents = (user) => {
         Vocabulary: document.querySelector('#vocab').value,
         definition: document.querySelector('#definition').value,
         languageortech: document.querySelector('#languageortech').value,
-        user: user.uid,
+        uid: user.uid,
         // dateTime: document.querySelector('#dateTime'),
       };
       postVocab(cardPayload).then(({ name }) => {
@@ -25,12 +25,12 @@ const formEvents = (user) => {
         Vocabulary: document.querySelector('#vocab').value,
         definition: document.querySelector('#definition').value,
         languageortech: document.querySelector('#languageortech').value,
-        user: user.uid,
+        uid: user.uid,
         // dateTime: document.querySelector('#dateTime'),
         firebaseKey
       };
       patchVocab(payload).then(() => {
-        getVocab(user).then(cardsOnDom);
+        getVocab(user.uid).then(cardsOnDom);
       });
     }
   });
