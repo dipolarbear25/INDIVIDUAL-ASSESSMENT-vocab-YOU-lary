@@ -61,7 +61,7 @@ Create issue tickets from the items below to help you get started.
   - [done ] Title
   - [done ] Definition
   - [done ] Language/Tech
-  - [ ] Time submitted - Not on form. Handle in your JS
+  - [done ] Time submitted - Not on form. Handle in your JS
   - [done ] user ID - Not on form. Pull from User object.
 - [done ] READ THIER entries
 - [done ] UPDATE THEIR entries
