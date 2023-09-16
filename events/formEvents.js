@@ -15,7 +15,7 @@ const formEvents = (user) => {
       postVocab(cardPayload).then(({ name }) => {
         const payload = { firebaseKey: name };
         patchVocab(payload).then(() => {
-          getVocab(user).then(cardsOnDom);
+          getVocab(user.uid).then(cardsOnDom);
         });
       });
     }
